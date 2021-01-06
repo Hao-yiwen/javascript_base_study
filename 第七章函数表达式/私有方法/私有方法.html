@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function MyObject() {
+        this.a=10;
+        var pri=10;
+        function priFun() {
+            return false;
+        }
+        this.publicMethod=function () {
+            console.log(pri)
+            return priFun();
+        }
+    }
+    var l=new MyObject();
+    l.publicMethod();
+    console.log(l.a);
+</script>
+</body>
+</html>

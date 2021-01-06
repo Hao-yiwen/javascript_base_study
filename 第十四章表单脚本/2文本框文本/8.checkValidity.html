@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" novalidate>
+        <input type="text" pattern="\d+" >
+        <button type="submit">提交</button>
+    </form>
+    <script>
+        let button=document.getElementsByTagName('button')[0];
+        button.addEventListener("click",function(){
+            if(document.forms[0].elements[0].checkValidity()){
+                console.log(1111);
+            }
+            else{
+                console.log(222);
+            }
+        })
+    </script>
+</body>
+</html>

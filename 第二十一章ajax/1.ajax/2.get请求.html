@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let url="example.txt";
+        let xhr=new XMLHttpRequest();
+        function addUrl(url,name,value){
+            url+=(url.indexOf("?")=="-1"?"?":"&");
+            url+=encodeURIComponent(name)+'='+encodeURIComponent(value);
+            return url;
+        }
+        url=addUrl(url,"name","nico")
+        console.log(url);
+        xhr.open("get",url,false)
+        xhr.send();
+    </script>
+</body>
+</html>

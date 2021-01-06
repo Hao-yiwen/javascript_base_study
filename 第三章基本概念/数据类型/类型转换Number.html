@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    console.log(Number(true));
+    console.log(Number(false));
+
+    console.log(Number(4))
+    
+    let a;
+    console.log(Number(null))
+
+    console.log(Number(a))
+
+
+    console.log(Number('1'))
+    console.log(Number('1.2'))
+    console.log(Number('0xf'))
+    console.log(Number({
+        a:123
+    }))
+
+    console.log(JSON.stringify({a:123,b:4,'c':3123}))
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person() {
+    }
+    Person.prototype.name="a";
+    Person.prototype.age=29;
+    Person.prototype.sayname=function () {
+        alert(this.name)
+    }
+    // console.log(Object.keys(Person.prototype));
+    // for(let a in Person.prototype){
+    //     console.log(a)
+    // }
+    let person1=new Person();
+    person1.name='b'
+    // console.log(Object.keys(person1));
+    // for(let a in person1){
+    //     console.log(a)
+    // }
+
+    console.log(person1)
+    console.log(Person.prototype)
+    console.log(typeof Person)
+</script>
+</body>
+</html>

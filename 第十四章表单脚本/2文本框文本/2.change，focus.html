@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text">
+    </form>
+    <script>
+        let textbox=document.forms[0].elements[0];
+        console.log(textbox);
+        textbox.addEventListener("focus",function(event){
+            let target=event.target;
+            console.log(target);
+            console.log(event.currentTarget);
+            if(target.style.backgroundColor!="red"){
+                target.style.backgroundColor="yellow";
+            }
+        })
+
+        textbox.addEventListener("blur",function(event){
+            let target=event.target;
+            if(/[^\d]/.test(target.value)){
+                target.style.backgroundColor="red"
+            }
+            else{
+                target.style.backgroundColor=""
+            }
+        })
+        textbox.addEventListener("change",function(event){
+            let target=event.target;
+            if(/[^\d]/.test(target.value)){
+                target.style.backgroundColor="red";
+            }
+            else{
+                target.style.backgroundColor=""
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="按钮" id="myBtn">
+    <script>
+        var btn = document.getElementById("myBtn");
+        var handler = function(){
+            alert(this.id);
+        };
+        btn.addEventListener("click", handler, false);
+        //这里省略了其他代码
+        btn.removeEventListener("click", handler, false); //有效！
+    </script>
+</body>
+</html>

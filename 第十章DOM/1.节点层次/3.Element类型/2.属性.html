@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myId" class="dsa" title="dsafsa" dsad="dsad">3123</div>
+    <script>
+        let div=document.getElementById("myId");
+        console.log(div.dsad);
+        console.log(div.getAttribute("class"));
+        console.log(div.getAttribute("title"));
+        console.log(div.getAttribute("dsad"));
+
+        console.log(div.setAttribute("id","dsadas"));
+
+
+        console.log(div.removeAttribute("class"));
+
+
+        console.log(div.attributes);
+
+        function outputAttributes(element){
+            var pairs = new Array(),
+            attrName,
+            attrValue,
+            i,
+            len;
+            for (i=0, len=element.attributes.length; i < len; i++){
+            attrName = element.attributes[i].nodeName;
+            attrValue = element.attributes[i].nodeValue;
+            pairs.push(attrName + "=\"" + attrValue + "\"");
+            }
+            return pairs.join(" ");
+            }
+
+        console.log(outputAttributes(div))
+    </script>
+</body>
+</html>

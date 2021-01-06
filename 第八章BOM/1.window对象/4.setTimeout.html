@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // window.setTimeout(function(){
+        //     console.log('123');
+        // },1000)
+        // var timeoutId=window.setInterval(function(){
+        //     console.log('123');
+        // },1000);
+        
+
+        // clearInterval(timeoutId);
+
+        let num=0;
+        var max=10;
+        var intervalId=null;
+        // function incrementNumber(){
+        //     num++;
+        //     if(num==max){
+        //         clearInterval(intervalId);
+        //         alert("Done");
+        //     }
+        // }
+        // intervalId=setInterval(incrementNumber,500)
+        function incrementNumber(){
+            num++;
+            if(num<max){
+                setTimeout(incrementNumber,500);
+            }
+            else{
+                alert("Done");
+            }
+        }
+        setTimeout(incrementNumber,500);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" class="ads" title="dasda" dir="ltr" lang="en">dasdas</div>
+    <script>
+        let div=document.getElementById("myDiv");
+        console.log(div.tagName)
+        console.log(div.nodeName);
+
+        console.log(div.id);
+        console.log(div.className);
+        console.log(div.title);
+        console.log(div.lang);
+        console.log(div.dir);
+        div.id = "someOtherId";
+    </script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="" id="">
+            <option value="dasda">ddsadasd</option>
+            <option value="dasda123">ddasddsadasd</option>
+        </select>
+        <select name="" id="">
+        </select>
+    </form>
+    <script>
+        let select1=document.forms[0].elements[0];
+        let select2=document.forms[0].elements[1];
+
+        select2.appendChild(select1.options[0]);
+        console.log(select1.options[0].index);
+        console.log(select2.options[0].index);
+    </script>
+</body>
+</html>

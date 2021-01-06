@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 5px solid green;
+            height: 100px;
+            width: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>123</div>
+    <script>
+        let div=document.getElementsByTagName("div")[0];
+        console.log(div.offsetHeight);
+        // console.log(div.style.height);
+        // console.log(div.style.backgroundColor);
+        console.log(div.offsetLeft);
+        console.log(div.offsetParent);
+        console.log(div.currentStyle);
+        // console.log(div.styleSheets[0].cssRules[0].cssText);
+
+
+        console.log(div.clientHeight);
+    </script>
+</body>
+</html>

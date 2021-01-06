@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=0;
+        let max=5;
+        // function setTime(){
+            
+        //     if(num<max){
+        //         console.log(1);
+        //         num++;
+        //         setTimeout(setTime,500);
+        //     }else{
+        //         console.log('done');
+        //     }
+        // };
+        // setTimeout(setTime,500);
+        function setInter(){
+            num++;
+            if(num==max){
+                console.log(1);
+                clearInterval(a)
+            }
+        }
+        let a=setInterval(setInter,500);
+    </script>
+</body>
+</html>

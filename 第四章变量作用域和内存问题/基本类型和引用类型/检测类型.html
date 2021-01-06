@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj=new Object();
+    obj.name='a';
+    obj.age=20;
+    obj.gender='man';
+
+        function fn(a,b){
+            this.a=a;
+            this.b=b;
+        }
+        let c=new fn();
+    console.log(obj instanceof Object)
+    console.log(obj.name instanceof constructor)
+    console.log(c.a instanceof Constructor)
+    console.log(fn instanceof Function)
+    
+</script>
+</body>
+</html>

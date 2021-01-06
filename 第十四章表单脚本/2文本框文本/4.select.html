@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select> -->
+        <input type="text" value="dasdasd">
+    </form>
+    <script>
+        let textbox=document.forms[0].elements[0];
+        console.log(textbox);
+        textbox.select();
+
+        textbox.addEventListener("select",function(event){
+            console.log(textbox.value);
+            console.log(textbox.value.substring(textbox.selectionStart,textbox.selectionEnd));
+        })
+    </script>
+</body>
+</html>

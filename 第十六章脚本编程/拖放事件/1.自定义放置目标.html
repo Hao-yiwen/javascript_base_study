@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="droptarget"></div>
+    <script>
+        var droptarget = document.getElementById("droptarget");
+        droptarget.addEventListener("dragover",function(event){
+            event.preventDefault();
+        })
+        droptarget.addEventListener("dragenter",function(event){
+            event.preventDefault();
+        })
+    </script>
+</body>
+</html>

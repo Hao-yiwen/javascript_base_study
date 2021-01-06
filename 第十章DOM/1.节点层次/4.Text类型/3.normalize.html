@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let element=document.createElement("div");
+        element.className="message";
+
+        let textNode=document.createTextNode("hello world")
+        element.appendChild(textNode);
+
+        let anotherNode=document.createTextNode("yippee");
+        element.appendChild(anotherNode);
+
+        let a=document.createElement("div");
+        a.innerText="dsad";
+
+        element.appendChild(a);
+
+        let textNode1=document.createTextNode("hello world")
+        element.appendChild(textNode1);
+
+
+
+        document.body.appendChild(element);
+
+        console.log(element.childNodes.length);
+
+        element.normalize();
+
+
+        console.log(element.childNodes.length);
+    </script>
+</body>
+</html>

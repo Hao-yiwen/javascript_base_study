@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myinput">
+    <script>
+        // window.addEventListener("keydown",function(event){
+        //     console.log(event.keyCode);
+        //     // console.log(event.charCode);
+        //     console.log(event.key);
+        //     console.log(event.char);
+        //     console.log(event.location);
+        // })
+        let input=document.getElementById('myinput')
+        input.addEventListener("textInput",function(event){
+            console.log(event.data);
+        })
+    </script>
+</body>
+</html>

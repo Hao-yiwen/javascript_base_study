@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="a" class="ccsc">12</div>
+        <div>34</div>
+    </div>
+    <script>
+        // console.log(document.documentElement);
+        let parentNode=document.getElementsByTagName('div')[0];
+        // console.log(parentNode);
+        console.log(parentNode.firstChild.nextSibling);   
+        console.log(parentNode.lastChild.previousSibling);
+        console.log(parentNode.childNodes);
+        console.log(parentNode.hasChildNodes());
+        let Node=parentNode.childNodes[1].cloneNode(true);
+        console.log(Node);
+        console.log(parentNode.appendChild(Node));
+        console.log(parentNode);
+        
+
+        console.log(parentNode.insertBefore(Node,parentNode.firstChild))
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mybtn">点击</button>
+    <script>
+        console.log(document.implementation.hasFeature("MouseEvents","2.0"));
+        // console.log(event);
+        let mybtn=document.getElementById("mybtn");
+        // mybtn.addEventListener("mousedown",function(event){
+        //         console.log(event.button);
+        //     // console.log(event.detail);
+        // })
+        mybtn.addEventListener("mouseover",function(event){
+            // console.log(event.currentTarget.innerText);
+            // console.log(this);
+            // console.log();
+            console.log(event.relatedTarget);
+            console.log(event.toElement);
+            console.log(event.fromElement);
+        })
+    </script>
+</body>
+</html>

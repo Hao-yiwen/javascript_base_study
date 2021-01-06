@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            a:123,
+            "b":'a'
+        }
+        console.log(Object.prototype.toString.call(obj))
+        console.log(Object.prototype.toString.call(obj.a))
+        console.log(Object.prototype.toString.call(obj.b))
+        console.log(obj.b)
+        console.log(obj.hasOwnProperty('a'));
+    </script>
+</body>
+</html>

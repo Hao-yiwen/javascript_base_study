@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="my-btn">点击</button>
+    <script>
+        let hande={
+            mes:'event',
+            handleClick:function(event){
+                console.log(this.mes);
+            }
+        }
+        // let a=hande.handleClick;
+        // a();
+        // hande.handleClick();
+        let btn=document.getElementById("my-btn");
+        btn.addEventListener("click",hande.handleClick.bind(hande));
+    </script>
+</body>
+</html>

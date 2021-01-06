@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(name,age) {
+        this.name=name;
+        this.age=age;
+        this.sayname=sayName;
+    }
+    function sayName() {
+        alert(this.name);
+    }
+    let person1=new Person('a',11);
+    let person2=new Person('b',20);
+    // person1.sayname();
+    // person2.sayname();
+    console.log(person1)
+    console.log(Person.prototype)
+    for(let a in person2){
+        console.log(a)
+    }
+    console.log(Object.keys(person2))
+    // console.log(""===false)
+    // console.log(""==null)
+    // console.log(""==undefined)
+    // console.log(undefined==NaN)
+    // console.log(Object.prototype.toString.call('a').split(' ')[1].replace(']',''));
+    // console.log(NaN==NaN)
+</script>
+</body>
+</html>

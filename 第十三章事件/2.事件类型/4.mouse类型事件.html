@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            top: 100px;
+            left: 100px;
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        window.addEventListener("load",function(){
+            let div=document.getElementsByTagName("div")[0];
+            div.addEventListener("click",function(event){
+                // console.log(event.clientX);
+                // console.log(event.clientY);
+                // console.log(event.pageX);
+                // console.log(event.pageY);
+                console.log(event.screenX);
+                console.log(event.screenY);
+            })
+        })
+    </script>
+</body>
+</html>
